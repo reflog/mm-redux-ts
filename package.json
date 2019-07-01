@@ -1,0 +1,56 @@
+{
+  "name": "mm-redux",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "module": "dist/mm-redux.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "@types/node": "^12.0.10",
+    "husky": "^2.4.1",
+    "isomorphic-fetch": "^2.2.1",
+    "mock-socket": "^8.0.5",
+    "nock": "^10.0.6",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1",
+    "redux-mock-store": "^1.5.3",
+    "tsconfig-paths-jest": "0.0.1",
+    "tsdx": "^0.7.2",
+    "tslib": "^1.10.0",
+    "typescript": "^3.5.2"
+  },
+  "dependencies": {
+    "moment-timezone": "^0.5.25",
+    "redux": "^4.0.1",
+    "redux-action-buffer": "^1.2.0",
+    "redux-offline": "git+https://github.com/enahum/redux-offline.git#4bd85e7e3b279a2b11fb4d587808d583d2b5e7b5",
+    "redux-persist": "4.9.1",
+    "redux-persist-node-storage": "^2.0.0",
+    "redux-thunk": "^2.3.0",
+    "remote-redux-devtools": "^0.5.16",
+    "reselect": "^4.0.0",
+    "serialize-error": "^4.1.0",
+    "shallow-equals": "^1.0.0",
+    "source-map-support": "^0.5.12"
+  }
+}
